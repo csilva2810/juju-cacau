@@ -1,17 +1,29 @@
 [
   {
-    "title": "Ovo de Colher - Te amo",
-    "description": "Ovo de colher, chocolate ao leite, em formato de coração. Um delicioso presente para o amor da sua vida!",
     "image": "/assets/images/ovo-te-amo.jpg"
   },
   {
-    "title": "Ovo 2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate laborum labore aliquid cumque suscipit.",
     "image": "/assets/images/ovo-colher-prestigio-chocolate.jpg"
   },
   {
-    "title": "Ovo 3",
-    "description": "Ovo de colher, chocolate ao leite, em formato de coração. Um delicioso presente para o amor da sua vida!",
     "image": "/assets/images/ovo-colher-ninho-com-nutella-pacoca.jpg"
+  },
+  {
+    "image": "/assets/images/ovo-colher-doce-de-leite.jpg"
+  },
+  {
+    "image": "/assets/images/ovo-colher-com-bombons.jpg"
+  },
+  {
+    "image": "/assets/images/ovo-colher-embrulhado.jpg"
+  },
+  {
+    "image": "/assets/images/ovo-morango.jpeg"
+  },
+  {
+    "image": "/assets/images/ovo-coracao-embrulhado.jpeg"
+  },
+  {
+    "image": "/assets/images/ovo-prestigio.jpeg"
   }
 ]
