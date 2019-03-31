@@ -17,8 +17,8 @@ title: JuJu Cacau
 email: juuevellyn14@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Chocolates caseiros da Juu Evellyn
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/juju-cacau" # the subpath of your site, e.g. /blog
+url: "csilva2810.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
