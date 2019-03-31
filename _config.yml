@@ -18,7 +18,7 @@ email: juuevellyn14@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Chocolates caseiros da Juu Evellyn
 baseurl: "/juju-cacau" # the subpath of your site, e.g. /blog
-url: "csilva2810.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://csilva2810.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
