@@ -1,0 +1,110 @@
+[
+  {
+    "category": "Tradicionais",
+    "description": "Esse ovo é feito apenas com a casca de chocolate e acompanha bombons dentro.",
+    "items": [
+      {
+        "black": "R$ 15,00",
+        "white": "R$ 18,00",
+        "weight": "100g"
+      },
+      {
+        "black": "R$ 22,00",
+        "white": "R$ 25,00",
+        "weight": "250g"
+      },
+      {
+        "black": "R$ 30,00",
+        "white": "R$ 33,00",
+        "weight": "350g"
+      },
+      {
+        "black": "R$ 40,00",
+        "white": "R$ 43,00",
+        "weight": "500g"
+      },
+      {
+        "black": "R$ 45,00",
+        "white": "R$ 48,00",
+        "weight": "750g"
+      },
+      {
+        "black": "R$ 50,00",
+        "white": "R$ 53,00",
+        "weight": "1Kg"
+      }
+    ]
+  },
+  {
+    "category": "Trufados",
+    "description": "Esse ovo é feito com a casca de chocolate, o recheio escolhido e acompanha bombons dentro.",
+    "flavors": {
+      "title": "Sabores:",
+      "items": [
+        "brigadeiro",
+        "ninho",
+        "cookies",
+        "doce de leite",
+        "mousse de limão",
+        "mousse de maracujá",
+        "trufa preta",
+        "trufa branca",
+        "prestígio",
+        "paçoca"
+      ]
+    },
+    "items": [
+      {
+        "black": "R$ 45,00",
+        "white": "R$ 50,00",
+        "weight": "500g"
+      },
+      {
+        "black": "R$ 55,00",
+        "white": "R$ 65,00",
+        "weight": "750g"
+      },
+      {
+        "black": "R$ 65,00",
+        "white": "R$ 71,00",
+        "weight": "1Kg"
+      }
+    ]
+  },
+  {
+    "category": "Ovos de Colher",
+    "description": "Esse ovo é feito com a casca de chocolate mais o recheio escolhido, que é colocado até a parte superior da casca, acompanha caixa e colher. OBS: Alguns sabores terão acréscimo, favor entrar em contato.",
+    "flavors": {
+      "title": "Sabores:",
+      "items": [
+        "brigadeiro",
+        "ninho",
+        "bem casado",
+        "doce de leite",
+        "mousse de limão",
+        "mousse de maracujá",
+        "prestígio",
+        "brigadeiro de nutella",
+        "ninho com nutella",
+        "paçoca"
+      ]
+    },
+    "items": [
+      {
+        "weight": "2 Ovos de 150g cada",
+        "black": "R$ 42,00",
+        "white": "R$ 45,00"
+      },
+      {
+        "weight": "1 Ovo de 250g",
+        "black": "R$ 40,00",
+        "white": "R$ 48,00"
+      },
+      {
+        "weight": "1 Ovo de 350g",
+        "black": "R$ 47,00",
+        "white": "R$ 53,00"
+      }
+    ]
+  }
+]

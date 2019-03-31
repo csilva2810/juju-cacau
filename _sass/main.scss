@@ -1,0 +1,236 @@
+@import "utils/variables";
+@import "base/site";
+
+.text-small {
+  font-size: 0.8em;
+}
+
+.Divider {
+  display: block;
+  margin: $space-3 0;
+  width: 150px;
+  height: 2px;
+  background-color: black;
+  background-image: linear-gradient(to right, $primary-color, $accent-color, $primary-color);
+  border: none;
+  border-radius: $border-radius;
+}
+
+.Container {
+  display: block;
+  padding: $space-2;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.Header {
+  height: 380px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  background-image: url('/assets/images/header-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 0 1px 3px black;
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  &__subtitle {
+    line-height: 1.6rem;
+  }
+}
+
+.Section {
+  display: block;
+  padding: $space-4 0 $space-5;
+  background-color: white;
+
+  &--alternative {
+    background-color: $primary-color-light;
+  }
+
+  @media screen and (max-width: $mobile-large) {
+    padding: $space 0 $space-4;
+  }
+}
+
+.Title {
+  display: block;
+  margin: $space-5 0;
+  color: $accent-color;
+
+  &:after {
+    content: "";
+    @extend .Divider;
+  }
+}
+
+.Grid {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-left: -$space-2;
+  margin-right: -$space-2;
+
+  &__column {
+    flex: 1 1 100%;
+    padding: 0 $space-2;
+    margin-bottom: $space-4;
+
+    @media screen and (min-width: $tablet) {
+      flex: 1 1 50%;
+    }
+
+    @media screen and (min-width: $laptop) {
+      flex: 1 1 33.3333%;
+    }
+  }
+}
+
+.Picture {
+  display: block;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+
+  &__imageContainer {
+    width: 100%;
+    max-height: 260px;
+    overflow: hidden;
+    border-radius: $border-radius;
+
+    @media screen and (min-width: $mobile-large) {
+      max-height: 240px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+
+  &__title {
+    margin: $space-2 0 $space;
+    color: $primary-color;
+  }
+
+  &__description {
+    margin: $space 0;
+    color: $secondary-text-color;
+  }
+}
+
+.Badge {
+  display: inline-block;
+  padding: $space / 2;
+  margin-bottom: $space;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: $border-radius;
+  background-color: rgba($accent-color, 0.7);
+}
+
+.Category {
+  display: block;
+  margin-bottom: $space-5;
+
+  &__title {
+    display: block;
+  }
+
+  &__description {
+    display: block;
+    padding: $space;
+    margin: $space-2 auto;
+    font-size: 0.9rem;
+    border-radius: $border-radius;
+    color: $secondary-text-color;
+    background-color: rgba(0, 0, 0, 0.07);
+  }
+
+  &__flavors {
+    margin: $space auto;
+  }
+}
+
+.Table {
+  width: 100%;
+  margin: $space auto;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+
+  @media screen and (max-width: $mobile-large) {
+    font-size: 0.8rem;
+  }
+
+  > thead > tr > th {
+    padding: $space-2 $space;
+    color: $primary-color;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px dashed #ddd;
+  }
+
+  > tbody > tr > td {
+    padding: $space;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  > tbody > tr:last-child > td {
+    border-bottom: none;
+  }
+}
+
+.Footer {
+  display: block;
+  padding: $space-5 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $accent-color;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: $space;
+    width: $space-5;
+    height: $space-5;
+    transition: .4s;
+
+    &:hover,
+    &:focus {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__credits {
+    flex: 1;
+    text-align: right;
+  }
+}

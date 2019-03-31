@@ -1,0 +1,14 @@
+<h1 class="Title">Ovos</h1>
+<div class="Grid">
+  {% for egg in site.data.eggs %}
+    <div class="Grid__column">
+      <div class="Picture">
+        <div class="Picture__imageContainer">
+          <img class="Picture__image" src="{{ egg.image }}" alt="{{ egg.title }}" />
+        </div>
+        <h2 class="Picture__title">{{ egg.title }}</h2>
+        <p class="Picture__description">{{ egg.description }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
