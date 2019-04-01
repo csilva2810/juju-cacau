@@ -18,6 +18,10 @@
 
 <body>
   {{ content }}
+
+  {% if jekyll.environment == "production" %}
+    {% include ga.events.html %}
+  {% endif %}
 </body>
 
 </html>

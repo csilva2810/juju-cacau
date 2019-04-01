@@ -1,12 +1,16 @@
-<h1 class="Title">Ovos</h1>
-<div class="Grid">
-  {% for egg in site.data.eggs %}
-    <div class="Grid__column">
-      <div class="Picture">
-        <div class="Picture__imageContainer">
-          <img class="Picture__image" src="{{ egg.image | relative_url }}" alt="{{ egg.title }}" />
+<section class="Section">
+  <div class="Container">
+    <h1 class="Title">Ovos</h1>
+    <div class="Grid">
+      {% for egg in site.data.eggs %}
+        <div class="Grid__column">
+          <div class="Picture">
+            <div class="Picture__imageContainer">
+              <img class="Picture__image" src="{{ egg.image | relative_url }}" alt="{{ egg.title }}" />
+            </div>
+          </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
-  {% endfor %}
-</div>
+  </div>
+</section>

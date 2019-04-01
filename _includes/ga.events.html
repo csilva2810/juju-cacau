@@ -1,0 +1,15 @@
+<script>
+  (function () {
+    var contactButton = document.getElementById('contact-button');
+
+    if (contactButton) {
+      contactButton.addEventListener('click', function () {
+        gtag('event', 'click', {
+          event_category: 'Action',
+          event_label: 'encomendar',
+          value: ''
+        });
+      });
+    }
+  })();
+</script>

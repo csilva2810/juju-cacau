@@ -1,36 +1,40 @@
-<h1 class="Title">Preços</h1>
+<section class="Section Section--alternative">
+  <div class="Container">
+    <h1 class="Title">Preços</h1>
 
-{% for item in site.data.prices %}
-  <div class="Category">
-    <h2 class="Category__title">{{ item.category }}</h2>
-    <div class="Category__description">{{ item.description }}</div>
+    {% for item in site.data.prices %}
+      <div class="Category">
+        <h2 class="Category__title">{{ item.category }}</h2>
+        <div class="Category__description">{{ item.description }}</div>
 
-    {% if item.flavors %}
-      <strong>{{ item.flavors.title }} </strong>
-      <div class="Category__flavors">
-        {% for flavor in item.flavors.items %}
-          <span class="Badge">{{ flavor | capitalize }}</span>
-        {% endfor %}
+        {% if item.flavors %}
+          <strong>{{ item.flavors.title }} </strong>
+          <div class="Category__flavors">
+            {% for flavor in item.flavors.items %}
+              <span class="Badge">{{ flavor | capitalize }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <table class="Table">
+          <thead>
+            <tr>
+              <th>Peso</th>
+              <th>Ao leite</th>
+              <th>Branco</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for categoryItem in item.items %}
+              <tr>
+                <td>{{ categoryItem.weight }}</td>
+                <td>{{ categoryItem.black }}</td>
+                <td>{{ categoryItem.white }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
       </div>
-    {% endif %}
-
-    <table class="Table">
-      <thead>
-        <tr>
-          <th>Peso</th>
-          <th>Ao leite</th>
-          <th>Branco</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for categoryItem in item.items %}
-          <tr>
-            <td>{{ categoryItem.weight }}</td>
-            <td>{{ categoryItem.black }}</td>
-            <td>{{ categoryItem.white }}</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    {% endfor %}
   </div>
-{% endfor %}
+</section>
